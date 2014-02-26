@@ -1,7 +1,7 @@
 exports.config = {
   //  https://github.com/brunch/brunch/blob/stable/docs/config.md
   paths: {
-    watched: ['app', 'vendor', 'test']
+    watched: ['app']
   },
   conventions: {
       assets: /(assets|test(\/|\\)assets)/
@@ -15,17 +15,20 @@ exports.config = {
 //      assets: /(assets|(font-awesome(\/|\\)(?!css)))(\/|\\)/
 //  For now: use a bower_assets.sh which symlinks into public, and .bashrc bowerwatch
   },
+  modules: {
+    wrapper: false,
+    definition: 'commonjs'
+  },
   files: {
     javascripts: {
       joinTo: {
         'js/app.js': /^app\/scripts/,
-        'js/vendor.js': /^bower_components/,
-        '../test/build/all_tests.js': /^test\/tests/
+        'js/vendor.js': /^bower_components/
       },
       order: {
         before: [
-          'vendor/scripts/common/console-polyfill.js',
-          'vendor/scripts/common/jquery.js',
+          'bower_components/console-polyfill/index.js',
+          'bower_components/jquery/dist/jquery.js',
         ]
       }
     },
@@ -35,13 +38,6 @@ exports.config = {
       },
       order: {
         before: ['bower_components/normalize-css']
-      }
-    },
-    templates: {
-      precompile: true,
-      root: 'templates',
-      joinTo: {
-        'javascripts/app.js': /^app/
       }
     }
   }

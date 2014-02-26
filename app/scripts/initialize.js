@@ -1,3 +1,7 @@
-var homeView = require('scripts/homeView')
+require.register("scripts/initialize", function(exports, require, module) {
 
-ko.applyBindings(new homeView.HomeViewModel("Planet", "Earth"));
+    var homeView = require('scripts/homeView')
+
+    ko.applyBindings(new homeView.HomeViewModel("Planet", "Earth"));
+
+});

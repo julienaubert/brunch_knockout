@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "brunch w -s",
-    "test": "brunch build && mocha-phantomjs test/index.html"
+    "test": "./node_modules/.bin/karma start karma.conf.js"
   },
   "dependencies": {
     "javascript-brunch": ">= 1.0 < 1.9",
@@ -21,8 +21,12 @@
     "less-brunch": ">= 1.0 < 1.9",
     "uglify-js-brunch": ">= 1.0 < 1.9",
     "clean-css-brunch": ">= 1.0 < 1.9",
-    "auto-reload-brunch": ">= 1.7.1",
-    "bower": "~1.0",
-    "mocha-phantomjs": "3.3.2"
+    "bower": "~1.0"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "~1.7.1",
+    "karma-mocha": "~0.1.1",
+    "karma-coverage": "~0.2.0",
+    "karma": "~0.10.9"
   }
 }
