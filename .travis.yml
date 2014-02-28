@@ -1,4 +1,4 @@
-language: javascript, python
+language: node_js, python
 
 node_js:
 - "0.10"
@@ -7,6 +7,6 @@ python:
   - "3.3"
 
 install:
-  - sudo npm install -g brunch
+  - npm install brunch
 
 script: "python test_skeleton.py" 
