@@ -9,10 +9,8 @@ before_install:
   - sudo apt-get install python3.3
 
 install:
-  - npm install brunch
-  - echo $TRAVIS_PYTHON_VERSION
-  - echo $TRAVIS_NODE_VERSION
   - python3.3 --version
   - node --version
+  - npm install -g brunch
 
 script: "python3.3 test_skeleton.py" 
