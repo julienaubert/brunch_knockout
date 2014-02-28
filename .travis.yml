@@ -11,6 +11,6 @@ before_install:
 install:
   - python3.3 --version
   - node --version
-  - npm install -g brunch, bower
+  - npm install -g brunch bower
 
 script: "python3.3 test_skeleton.py" 
