@@ -16,7 +16,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'bower_components/commonjs-require-definition/require.js',
-      'bower_Components/knockout.js/knockout.js',
+      'bower_components/knockout.js/knockout.js',
       'bower_components/mocha/mocha.js',
       'bower_components/chai/chai.js',
       'bower_components/sinon-chai/lib/sinon-chai.js',
