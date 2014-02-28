@@ -19,6 +19,7 @@ Testing: (headless or browser, code-coverage)
 
 - Install [node](http://nodejs.org/).
 - Install Brunch: `npm install -g brunch`.
+- Install Bower: `npm install -g bower`.
 - Run `brunch new https://github.com/julienaubert/brunch_knockout <app name>`.
 - cd into your new app folder.
 - verify can run tests: `npm test` (2 example tests should run and pass, coverage should be reported). Note: it will auto-watch, `ctrl-c` to stop.
