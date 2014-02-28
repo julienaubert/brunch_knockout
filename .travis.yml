@@ -1,4 +1,7 @@
 node_js:
 - "0.10"
 
+python:
+  - "3.3"
+
 script: "python3 test_skeleton.py" 
