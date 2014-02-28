@@ -1,4 +1,4 @@
-language: node_js, python
+language: python
 
 node_js:
 - "0.10"
@@ -8,5 +8,7 @@ python:
 
 install:
   - npm install brunch
+  - echo $TRAVIS_PYTHON_VERSION
+  - echo $TRAVIS_NODE_VERSION
 
 script: "python test_skeleton.py" 
