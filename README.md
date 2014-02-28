@@ -1,5 +1,8 @@
 # Knockout skeleton [Brunch](http://brunch.io/)
 
+[![Build Status](https://travis-ci.org/julienaubert/brunch_knockout.png?branch=master)](https://travis-ci.org/julienaubert/brunch_knockout)
+
+
 Uses latest brunch (1.7.13) with bower to manage packages (no "vendor" folder).
 
 JavaScript based skeleton:
