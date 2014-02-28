@@ -20,7 +20,7 @@
     "css-brunch": "~1.7.0",
     "less-brunch": "~1.7.1",
     "uglify-js-brunch": "~1.7.6",
-    "clean-css-brunch": "~1.7.1",
+    "clean-css-brunch": "~1.7.1"
   },
   "devDependencies": {
     "auto-reload-brunch": "1.7.1",
