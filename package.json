@@ -2,7 +2,7 @@
   "author": "Julien Aubert",
   "name": "knockout-brunch",
   "description": "Knockout, font-awesome, some html5boilerplate.",
-  "version": "0.1.2",
+  "version": "0.1.3-beta",
   "homepage": "",
   "repository": {
     "type": "git",
