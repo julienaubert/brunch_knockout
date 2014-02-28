@@ -3,17 +3,16 @@ language: node_js
 node_js:
 - "0.10"
 
-python:
-  - "3.3"
-
 before_install:
-  - sudo apt-get install python3
+  - sudo add-apt-repository ppa:fkrull/deadsnakes
+  - sudo apt-get update
+  - sudo apt-get install python3.3
 
 install:
   - npm install brunch
   - echo $TRAVIS_PYTHON_VERSION
   - echo $TRAVIS_NODE_VERSION
-  - python3 --version
+  - python3.3 --version
   - node --version
 
-script: "python3 test_skeleton.py" 
+script: "python3.3 test_skeleton.py" 
