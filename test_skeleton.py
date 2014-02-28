@@ -12,6 +12,8 @@ def get_free_port():
     s.close()
     return port
 
+PASSED = True
+
 
 class test():
     def __init__(self, f):
@@ -24,7 +26,10 @@ class test():
         if not passed:
             print(out)
             print(err)
-
+        if not passed:
+            global PASSED
+            PASSED = False
+        return passed
 
 def exec_timeout(cmd, timeout):
     out = tempfile.TemporaryFile()
@@ -82,3 +87,5 @@ def run_tests():
 
 if __name__ == '__main__':
     run_tests()
+    if not PASSED:
+        sys.exit(1)

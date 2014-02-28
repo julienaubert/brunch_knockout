@@ -1,4 +1,4 @@
-language: python
+language: node_js
 
 node_js:
 - "0.10"
@@ -6,9 +6,14 @@ node_js:
 python:
   - "3.3"
 
+before_install:
+  - sudo apt-get install python3
+
 install:
   - npm install brunch
   - echo $TRAVIS_PYTHON_VERSION
   - echo $TRAVIS_NODE_VERSION
+  - python3 --version
+  - node --version
 
-script: "python test_skeleton.py" 
+script: "python3 test_skeleton.py" 
