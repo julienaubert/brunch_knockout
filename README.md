@@ -13,7 +13,7 @@ JavaScript based skeleton:
 
 Testing: (headless or browser, code-coverage)
 - [karma](http://karma-runner.github.io/) as test runner (istanbul for code coverage)
-- [mocha](http://visionmedia.github.io/mocha/), [chai](http://chaijs.com/), [sinon](http://sinonjs.org/)
+- [mocha](http://mochajs.org/), [chai](http://chaijs.com/), [sinon](http://sinonjs.org/)
 
 ## Installation
 
@@ -42,7 +42,7 @@ As you modify tests or app-scripts, the tests will be re-run.
 
 Modify karma.conf.js as you need, see [karma configuration](http://karma-runner.github.io/0.8/intro/configuration.html).
 
-To run a single test, see [mocha](http://visionmedia.github.io/mocha/)'s "Exclusive tests" (i.e. use `it.only`/`describe.only`)
+To run a single test, see [mocha](http://mochajs.org/)'s "Exclusive tests" (i.e. use `it.only`/`describe.only`)
 ## Todo
 
 Nice-if:
